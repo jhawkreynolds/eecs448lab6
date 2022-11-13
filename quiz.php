@@ -109,6 +109,6 @@
         $correctanswercount++;
     }
 
-    echo "<h2>Summary:<h2>";
+    echo "<h2>Summary:</h2>";
     echo "<p> You got " . $correctanswercount . " out of 5 questions correct.</p>";
     echo "<p>Final score: " . $correctanswercount * 20 . "%</p>";
