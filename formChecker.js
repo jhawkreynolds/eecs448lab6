@@ -105,7 +105,7 @@ function validateUsername()
             }
             else
             {
-                    return false;   
+                return false;   
             }
         }
         else
