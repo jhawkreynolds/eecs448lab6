@@ -62,7 +62,7 @@ function validateCatalog()
 
 function validateUsername()
 {
-    let username = document.getElementById("username");
+    let username = document.getElementById("username").value;
     let foundUser = false;
     let foundAtSign = false;
     let foundDomain = false;
