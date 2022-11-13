@@ -1,7 +1,10 @@
 <?php
 
-$username = $_POST("shipping");
-$password = $_POST("shipping");
+error_reporting(E_ALL); 
+ini_set("display_errors", 1);
+
+$username = $_POST["username"];
+$password = $_POST["password"];
 echo "<p>" . $username . "</p>";
 echo "<p>" . $password . "</p>";
 
@@ -15,12 +18,12 @@ $price_fryer = 13;
 $price_piano = 42000;
 $price_socks = 9.99;
 
-$amount_chess = $_POST("chessset");
-$amount_fryer = $_POST("airfryer");
-$amount_piano = $_POST("grandpiano");
-$amount_socks = $_POST("fuzzysocks");
+$amount_chess = $_POST["chessset"];
+$amount_fryer = $_POST["airfryer"];
+$amount_piano = $_POST["grandpiano"];
+$amount_socks = $_POST["fuzzysocks"];
 
-$shipping_rate = $_POST("shipping");
+$shipping_rate = $_POST["shipping"];
 $shipping_option = "";
 if($shipping_rate == 0)
 {
