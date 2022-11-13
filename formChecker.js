@@ -1,6 +1,7 @@
 function validateForm()
 {
     let validationStep1 = validateCatalog();
+    return false;
     let validationStep2 = validateUsername();
     return false;
 }
