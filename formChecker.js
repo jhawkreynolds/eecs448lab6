@@ -81,6 +81,7 @@ function validateUsername()
                 else
                 {
                     foundAtSign = true;
+                    alert("Found at sign!");
                 }
             }
             else
@@ -98,7 +99,8 @@ function validateUsername()
                 }
                 else
                 {
-                    foundDomain = true;
+                    foundDot = true;
+                    alert("Found dot!");
                 }
             }
             else
@@ -113,15 +115,18 @@ function validateUsername()
                 if(foundDot)
                 {
                     foundTopLevelDomain = true;
+                    alert("Found top level domain!");
                 }
                 else
                 {
                     foundDomain = true;
+                    alert("Found domain!");
                 }
             }
             else
             {
                 foundUser = true;
+                alert("Found user!");
             }
         }
     }
