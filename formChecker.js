@@ -134,7 +134,7 @@ function validateUsername()
 
 function validatePassword()
 {
-    let pass = document.getElementById("password");
+    let pass = document.getElementById("password").value;
     if(pass.length == 0)
     {
         alert("Please enter a password.");
