@@ -1,8 +1,10 @@
 <?php
+    
     $useranswer1 = "";
     
     $correctanswer1 = "Malott Hall";
     
+    $correctanswercount = 0;
     
     echo "<h2>Question 1:</h2>";
     echo "<p>Which of these buildings is NOT on Jayhawk Boulevard?</p>";
@@ -18,6 +20,10 @@
     echo "<p>User answer: " . $useranswer1 . "</p>";
     echo "<p>Correct answer: " . $correctanswer1 . "</p>";
     
+    if($useranswer1 == $correctanswer1)
+    {
+        $correctanswercount++;
+    }
 
     echo "<h2>Question 2:</h2>";
     echo "<p>If you enter from the front entrance, which floor of the Kansas Union are you on?</p>";
