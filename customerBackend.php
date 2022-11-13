@@ -1,5 +1,7 @@
 <?php
 
+echo "<link href='style.css' rel='stylesheet' type='text/css'/>";
+
 error_reporting(E_ALL); 
 ini_set("display_errors", 1);
 
