@@ -4,7 +4,7 @@ function validateForm()
     let validationStep2 = validateUsername();
     let validationStep3 = validatePassword();
     let validationStep4 = validateShipping();
-    return false;
+    return(validationStep1 && validationStep2 && validationStep3 && validationStep4);
 }
 
 function validateCatalog()
