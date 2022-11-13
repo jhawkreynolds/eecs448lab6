@@ -1,8 +1,8 @@
 <?php
     echo "<h2>Question 1:</h2>";
     echo "<p>Which of these buildings is NOT on Jayhawk Boulevard?</p>";
-    $strong_hall = $_POST("strong_hall");
-    echo $strong_hall . "<br>";
+    $question1 = $_POST("question1");
+    echo $question1 . "<br>";
     echo "<h2>Question 2:</h2>";
     echo "<p>If you enter from the front entrance, which floor of the Kansas Union are you on?</p>";
     echo "<h2>Question 3:</h2>";
