@@ -60,39 +60,39 @@ echo "<table>";
     //chess
     echo "<tr>";
         echo "<th>Chess Set</th>";
-        echo "<td>" . $amount_chess . "</td>";
-        echo "<td>" . $price_chess . "</td>";
-        echo "<td>" . $total_chess . "</td>";
+        echo "<td>$" . $amount_chess . "</td>";
+        echo "<td>$" . $price_chess . "</td>";
+        echo "<td>$" . $total_chess . "</td>";
     echo "</tr>";
     //fryer
     echo "<tr>";
         echo "<th>Air Fryer</th>";
-        echo "<td>" . $amount_fryer . "</td>";
-        echo "<td>" . $price_fryer . "</td>";
-        echo "<td>" . $total_fryer . "</td>";
+        echo "<td>$" . $amount_fryer . "</td>";
+        echo "<td>$" . $price_fryer . "</td>";
+        echo "<td>$" . $total_fryer . "</td>";
     echo "</tr>";
     //piano
     echo "<tr>";
         echo "<th>Grand Piano</th>";
-        echo "<td>" . $amount_piano . "</td>";
-        echo "<td>" . $price_piano . "</td>";
-        echo "<td>" . $total_piano . "</td>";
+        echo "<td>$" . $amount_piano . "</td>";
+        echo "<td>$" . $price_piano . "</td>";
+        echo "<td>$" . $total_piano . "</td>";
     echo "</tr>";
     //socks
     echo "<tr>";
         echo "<th>Fuzzy Socks</th>";
-        echo "<td>" . $amount_socks . "</td>";
-        echo "<td>" . $price_socks . "</td>";
-        echo "<td>" . $total_socks . "</td>";
+        echo "<td>$" . $amount_socks . "</td>";
+        echo "<td>$" . $price_socks . "</td>";
+        echo "<td>$" . $total_socks . "</td>";
     echo "</tr>";
     echo "<tr>";
         echo "<th>Shipping</th>";
         echo "<td colspan='2'>" . $shipping_option . "</td>";
-        echo "<td>" . $shipping_rate . "</td>";
+        echo "<td>$" . $shipping_rate . "</td>";
     echo "</tr>";
     echo "<tr>";
         echo "<th colspan='3'>Final Cost</th>";
-        echo "<td>" . $final_total . "</td>";
+        echo "<td>$" . $final_total . "</td>";
     echo "</tr>";
 echo "</table>";
 
