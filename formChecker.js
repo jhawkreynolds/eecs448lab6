@@ -2,7 +2,6 @@ function validateForm()
 {
     let validationStep1 = validateCatalog();
     let validationStep2 = validateUsername();
-    return(false);
     let validationStep3 = validatePassword();
     let validationStep4 = validateShipping();
     return false;
@@ -81,7 +80,6 @@ function validateUsername()
                 else
                 {
                     foundAtSign = true;
-                    alert("Found at sign!");
                 }
             }
             else
@@ -100,7 +98,6 @@ function validateUsername()
                 else
                 {
                     foundDot = true;
-                    alert("Found dot!");
                 }
             }
             else
@@ -115,18 +112,15 @@ function validateUsername()
                 if(foundDot)
                 {
                     foundTopLevelDomain = true;
-                    alert("Found top level domain!");
                 }
                 else
                 {
                     foundDomain = true;
-                    alert("Found domain!");
                 }
             }
             else
             {
                 foundUser = true;
-                alert("Found user!");
             }
         }
     }
