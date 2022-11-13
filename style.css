@@ -1,0 +1,36 @@
+body
+{
+    background-color: lightsteelblue;
+}
+
+h1
+{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18pt;
+}
+
+h2
+{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 14pt;
+}
+
+h3
+{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 12pt;
+}
+
+p
+{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 10pt;
+}
+
+table, th, td
+{
+    border:1px solid black;
+}
+
+
+
