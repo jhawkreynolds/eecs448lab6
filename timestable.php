@@ -14,7 +14,7 @@ for($i = 0; $i <= 100; $i++){
 	}
 	if($i > 0){
 		echo "<td>" . $i . " </td>";
-		for($j = 1; $j < 100; $j++){
+		for($j = 1; $j <= 100; $j++){
 			echo "<td>" . product($i,$j) . "</td>";
 		}
 	}
