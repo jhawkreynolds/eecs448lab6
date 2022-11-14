@@ -1,3 +1,14 @@
+<!-- EECS 448 Lab 6
+    file: customerFrontend.html
+    author: Jack Reynolds
+    written: 13 November 2022
+    
+    Starting HTML page for the store.
+    Includes the catalog and input options used
+    by the associated .php and .js files.
+-->
+
+
 <!DOCTYPE html>
 <html> 
     <head>
@@ -7,8 +18,13 @@
     type="text/css"/> 
     </head> 
 <body>
-    <script src="formChecker.js"></script> 
-    <form onsubmit="return validateForm()" action="customerBackend.php" method="post"> 
+    <script src="formChecker.js"></script>
+    
+<!--
+    This syntax is a little unusual.
+    The "onsubmit" event calls for validateForm() from the .js file.
+    If and only if this returns "TRUE", the .php file activates.
+--> <form onsubmit="validateForm()" action="customerBackend.php" method="post"> 
 
         <h2>Catalog</h2>
         <h3>Chess Set ($29.95)</h3>
