@@ -1,3 +1,10 @@
+//  EECS 448 Lab 6
+//  file: formChecker.js
+//  author: Jack Reynolds
+//  written: 13 November 2022
+//    
+//  Validates that the form is safe to submit.
+
 function validateForm()
 {
     let validationStep1 = validateCatalog();
@@ -134,8 +141,8 @@ function validateUsername()
 
 function validatePassword()
 {
-    let pass = document.getElementById("password").value;
-    if(pass.length == 0)
+    let password = document.getElementById("password").value;
+    if(password.length == 0)
     {
         alert("Please enter a password.");
         return false;
@@ -149,6 +156,9 @@ function validateShipping()
     let shipping = document.getElementsByName("shipping");
     for(let i = 0; i < shipping.length; i++)
     {
+        //  we iterate over the radio buttons,
+        //  checking if at least one has been checked.
+        //  if so, we can submit.
         if(shipping[i].checked == true)
         {
             foundShipping = true;
