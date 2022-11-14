@@ -1,22 +1,38 @@
 <?php
-    
+//  EECS 448 Lab 6
+//  file: quiz.php
+//  author: Jack Reynolds
+//  written: 13 November 2022
+//    
+//  Grades the user's quiz result.
+
+    //Answer variables
     $useranswer1 = "";
     $useranswer2 = "";
     $useranswer3 = "";
     $useranswer4 = "";
     $useranswer5 = "";
     
+    //Correct answers
     $correctanswer1 = "Malott Hall";
     $correctanswer2 = "4th";
     $correctanswer3 = "Tennessee";
     $correctanswer4 = "Strong and Bailey";
     $correctanswer5 = "Naismith Drive";
     
+    //Variable for checking the correct answer total
     $correctanswercount = 0;
     
+    //  Here we echo the text for a question.
+
     echo "<h2>Question 1:</h2>";
     echo "<p>Which of these buildings is NOT on Jayhawk Boulevard?</p>";
     
+    //  If the question has had an answer selected,
+    //  which we check using the isset() function,
+    //  we grab that with $_POST.
+    //  Otherwise, we substitute with a placeholder
+    //  "No answer!" option.
     if(isset($_POST["question1"]))
     {
         $useranswer1 = $_POST["question1"];
@@ -111,4 +127,5 @@
 
     echo "<h2>Summary:</h2>";
     echo "<p> You got " . $correctanswercount . " out of 5 questions correct.</p>";
+    // There are five questions, so x * 20 gives us the correct percent.
     echo "<p>Final score: " . $correctanswercount * 20 . "%</p>";
